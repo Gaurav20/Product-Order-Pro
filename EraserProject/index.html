@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Order List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="order-app">
+        <table id="product-table">
+            <thead>
+                <tr>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <select class="product-name">
+                            <option value="" disabled selected>Choose Product</option>
+                            <option value="Pencil">Pencil</option>
+                            <option value="Eraser">Eraser</option>
+                            <option value="Pens">Pens</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select class="product-quantity">
+                            <option value="" disabled selected>Choose Quantity</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </td>
+                    <td><button class="add-btn">ADD</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="show-order-btn">Show Order</button>
+        <div id="grid2"></div>
+        <button id="read-order-btn">What is my Order?</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
